@@ -1,0 +1,27 @@
+.converter {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 15px 25px;
+}
+
+.converter__row {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.converter__header {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0 25px;
+}
+
+.converter__input {
+  width: 100%;
+}
+
+.converter__select {
+  max-width: 80px;
+}

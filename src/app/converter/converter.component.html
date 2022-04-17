@@ -1,0 +1,53 @@
+<section class="converter">
+  <h1 class="converter__header">Let's convert something!</h1>
+  <div class="converter__row">
+    <mat-form-field class="converter__input" appearance="outline">
+      <input
+        matInput
+        placeholder="1.00"
+        type="number"
+        min="0.01"
+        step="0.01"
+        (keyup)="convert('input1')"
+        (change)="convert('input1')"
+        [(ngModel)]="input1.value"
+      />
+    </mat-form-field>
+    <mat-form-field class="converter__select" appearance="outline">
+      <mat-label>Currency</mat-label>
+      <mat-select
+        [(ngModel)]="input1.currency"
+        (valueChange)="convert('input1')"
+      >
+        <mat-option value="USD">$</mat-option>
+        <mat-option value="EUR">€</mat-option>
+        <mat-option value="UAH">₴</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="converter__row">
+    <mat-form-field class="converter__input" appearance="outline">
+      <input
+        matInput
+        placeholder="1.00"
+        type="number"
+        min="0.01"
+        step="0.01"
+        (keyup)="convert('input2')"
+        (change)="convert('input2')"
+        [(ngModel)]="input2.value"
+      />
+    </mat-form-field>
+    <mat-form-field class="converter__select" appearance="outline">
+      <mat-label>Currency</mat-label>
+      <mat-select
+        [(ngModel)]="input2.currency"
+        (valueChange)="convert('input2')"
+      >
+        <mat-option value="USD">$</mat-option>
+        <mat-option value="EUR">€</mat-option>
+        <mat-option value="UAH">₴</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</section>
