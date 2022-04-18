@@ -18,7 +18,7 @@
       <mat-label>Currency</mat-label>
       <mat-select
         [(ngModel)]="input1.currency"
-        (valueChange)="convert('input1')"
+        (ngModelChange)="convert('input1')"
       >
         <mat-option value="USD">$</mat-option>
         <mat-option value="EUR">€</mat-option>
@@ -43,7 +43,7 @@
       <mat-label>Currency</mat-label>
       <mat-select
         [(ngModel)]="input2.currency"
-        (valueChange)="convert('input2')"
+        (ngModelChange)="convert('input2')"
       >
         <mat-option value="USD">$</mat-option>
         <mat-option value="EUR">€</mat-option>

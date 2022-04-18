@@ -25,6 +25,10 @@ export class ConverterComponent implements OnInit {
     currency: 'USD',
   };
 
+  log() {
+    console.log(this.input2);
+  }
+
   convert(inputName: string): void {
     let activeInput = this.input1;
     let passiveInput = this.input2;
