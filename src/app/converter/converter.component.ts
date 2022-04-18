@@ -13,7 +13,6 @@ export class ConverterComponent implements OnInit {
   ngOnInit(): void {
     this.converter.getRates('UAH').subscribe();
     this.converter.getRates('USD').subscribe();
-    this.convert('input1');
   }
 
   input1: Input = {
@@ -23,10 +22,10 @@ export class ConverterComponent implements OnInit {
 
   input2: Input = {
     value: 1,
-    currency: 'UAH',
+    currency: 'USD',
   };
 
-  convert(inputName: string) {
+  convert(inputName: string): void {
     let activeInput = this.input1;
     let passiveInput = this.input2;
 
