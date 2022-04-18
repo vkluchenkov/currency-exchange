@@ -10,10 +10,7 @@ import { Input } from '../input';
 export class ConverterComponent implements OnInit {
   constructor(private converter: ConverterService) {}
 
-  ngOnInit(): void {
-    this.converter.getRates('UAH').subscribe();
-    this.converter.getRates('USD').subscribe();
-  }
+  ngOnInit(): void {}
 
   input1: Input = {
     value: 1,
